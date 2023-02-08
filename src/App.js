@@ -7,6 +7,7 @@ import Button from './components/Button/Button';
 import Formulario from './components/Formulario/Formulario';
 import ParentComponent from './components/ParentComponent/ParentComponent';
 import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar/>
+        <ItemListContainer greeting="Saludos"/>
         {/* <ParentComponent>
           <h2>Soy children</h2>
           <h3>este es el titulo</h3>
