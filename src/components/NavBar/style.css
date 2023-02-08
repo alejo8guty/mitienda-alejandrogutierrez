@@ -1,0 +1,19 @@
+.classEstilo img{
+
+    
+        width: 30px; 
+        height:30px;
+    
+
+}
+
+.classEstilo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.classEstilo a{
+
+    margin: 10px;
+}
