@@ -1,19 +1,28 @@
-.classEstilo img{
 
-    
-        width: 30px; 
-        height:30px;
-    
-
-}
 
 .classEstilo{
+    width:100%;
+    background-color: antiquewhite;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-content: center;
 }
 
-.classEstilo a{
+.menuLista{
 
-    margin: 10px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.menuLista li{
+    margin: 20px;
+}
+.active{
+    color:green;
+}
+
+.inactive{
+    color:grey;
 }

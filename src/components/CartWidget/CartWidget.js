@@ -5,8 +5,8 @@ export default function CartWidget(){
 
         return(
             <div className='classStyle'>
-                <img src='icn-cart.png' alt='carrito'/>
-                
+                <img src='./img/icn-cart.png' alt='carrito'/>
+                5
             </div>
         );
     }
