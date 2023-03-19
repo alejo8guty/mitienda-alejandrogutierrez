@@ -1,12 +1,12 @@
- import { products } from "../../data/products";
+ import { products } from "../../../data/products";
  import { useEffect,useState } from "react";
- import ItemList from "../../components/ItemList/ItemList";
+ import ItemList from "../../../components/ItemList/ItemList";
  import { useParams } from "react-router-dom";
 
  const ItemListContainer = ({greeting}) => {
   const [productList,setProductList]=useState([]);
   const {categoryId}=useParams();
-  console.log(categoryId);
+
 
  const getProducts = new Promise((res, rej) =>{
   if(categoryId){
@@ -19,11 +19,14 @@
  }else{
   setTimeout(()=>{
     res(products);
-  },3000);
+  },1000);
  }
  });
  
+
+
  useEffect(()=>{
+
   getProducts
   .then((response)=>{
     //console.log(response);

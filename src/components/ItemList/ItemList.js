@@ -9,8 +9,8 @@ const ItemList = ({productList}) => {
     {productList.map((product)=>(
       <div key={product.id}>
         <Link to={`/item/${product.id}`}>
-      <Item product={product}/>  
-      </Link>
+          <Item product={product}/>  
+        </Link>
       </div>
     ))}
     </div>

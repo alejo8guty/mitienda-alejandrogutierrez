@@ -8,8 +8,10 @@ import './App.css';
 // import ParentComponent from './components/ParentComponent/ParentComponent';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
+import ItemListContainer from './pages/ItemListConta/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import Cart from './pages/ItemListConta/Cart/Cart';
+import CartProvider from './context/CartProvider';
 
 function App() {
 
@@ -21,13 +23,19 @@ function App() {
 
   return (
     <BrowserRouter>
+    <CartProvider>
     <NavBar/>
     <Routes>
       <Route path='/' element={<ItemListContainer/>}/>
-      <Route path='/item/:Id' element={<ItemDetailContainer/>}/>
       <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
-   
+      <Route path='/item/:id' element={<ItemDetailContainer/>}/>
+      <Route path='/cart' element={<Cart/>}/>
+      
+         
     </Routes>
+    </CartProvider>
+
+
     </BrowserRouter>
     // <div>
 

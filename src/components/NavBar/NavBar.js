@@ -2,11 +2,12 @@ import './style.css'
 import CartWidget from '../CartWidget/CartWidget';
 import { Link , NavLink} from 'react-router-dom';
 
+
 export default function NavBar(){
  
         return(
             <div className='classEstilo'>
-                <div><img src='./img/brand-OKS2.png' alt='Logo de marca'/></div>
+                <div><img src='/img/brand-OKS2.png' alt='Logo de marca'/></div>
                 <div >
                     <ul className='menuLista'>
                         <li>

@@ -6,7 +6,7 @@ export const products = [
         price: '450 USD',
         category: 'Aceites',
         stock: 10,
-        image: './img/oks-110.jpeg'
+        image: '/img/oks-110.jpeg'
 
     },
     {
@@ -16,7 +16,7 @@ export const products = [
         price: '400 USD',
         category: 'Aceites',
         stock: 10,
-        image: './img/oks-340.jpeg'
+        image: '/img/oks-340.jpeg'
 
     },
     {
@@ -26,7 +26,7 @@ export const products = [
         price: '350 USD',
         category: 'Grasas',
         stock: 10,
-        image: './img/oks-370.jpeg'
+        image: '/img/oks-370.jpeg'
     },
     {
         id: 4,
@@ -35,7 +35,7 @@ export const products = [
         price: '300 USD',
         category: 'Grasas',
         stock: 10,
-        image: './img/oks-402.jpeg'
+        image: '/img/oks-402.jpeg'
     }
 
 ];
